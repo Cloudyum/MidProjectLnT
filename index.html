@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCandit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#">iCandit</a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to iCandit</h1>
+            <p>Discover the art of creativity with iCandit. We specialize in bringing your ideas to life through innovative solutions.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>iCandit is a creative studio founded by passionate individuals who are dedicated to delivering exceptional results. </p>
+            <p>Our mission is to bring creativity throughout the world and share much joy to all people who in need for change in their memories.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="Akaashivolley.png" alt="Photo Editing">
+                    <h3>Photo Editing</h3>
+                    <p>Transform your photos into stunning masterpieces with our professional editing services.</p>
+                    <a href="#" class="btn">View Projects</a>
+                </div>
+                <div class="service">
+                    <img src="Akaashitimeskip.png" alt="Video Editing">
+                    <h3>Video Editing</h3>
+                    <p>Elevate your videos with captivating edits that engage and inspire your audience.</p>
+                    <a href="#" class="btn">View Projects</a>
+                </div>
+                <div class="service">
+                    <img src="AkaashiLogo.png" alt="Logo Editing">
+                    <h3>Comic Editing</h3>
+                    <p>Bring your stories to life through dynamic comic editing that captures the imagination.</p>
+                    <a href="#" class="btn">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: info@icandit.com</p>
+                <p>Phone: +1234567890</p>
+                <p>Follow us: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2024 iCandit. All Rights Reserved.</p>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
